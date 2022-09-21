@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --josefin-font: 'Josefin Sans', sans-serif;
+    --white: #fff;
+    --black-gray: #454545;
+    --purple: #6a0ec2;
+    --purple-light: #b474ef;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--josefin-font);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/agave-in-pot.png');
+    background-size: cover;
+    background-position: left;
+}
+
+.content{
+    width: 80%;
+    height: 18vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h2{
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: var(--purple);
+}
+
+.content ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.content ul li a{
+    text-decoration: none;
+    color: var(--purple);
+    transition: .4s;
+}
+
+.content ul li a:hover{
+    color: var(--purple-light);
+    border-bottom: 1px solid var(--purple-light);
+}
+
+.main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1{
+    font-size: 4em;
+    margin: 20px 0 20px;
+    color: var(--purple);
+}
+
+h3{
+    color: var(--black-gray);
+    font-size: 3.8em;
+    font-weight: 400;
+}
+
+h4{
+    color: var(--black-gray);
+    font-size: 3.8em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: var(--purple);
+}
+
+button{
+    background-color: var(--purple);
+    padding: 12px 36px;
+    border: 2px solid transparent;
+    border-radius: 32px;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
+
+.sidebar{
+    position: absolute;
+    width: 60px;
+    height: 340px;
+    background-color: var(--white);
+    border-radius: 12px;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: flex-end;
+    margin: 5px auto;
+}
+
+.text{
+    display: flex;
+    background-color: var(--purple);
+    height: 100%;
+    min-height: 0px;
+    margin-right: 5px;
+    line-height: 0;
+    color: var(--white);
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+}
+
+.icon{
+    height: 100%;
+    min-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.icon i{
+    color: var(--purple);
+    font-size: 1.1em;
+    line-height: 50px;
+}
+
+.box:hover .icon{
+    background-color: var(--purple);
+}
+
+.box:hover .icon i{
+    color: var(--white);
+}
+
+.box:hover .text{
+    min-width: 120px;
+}
